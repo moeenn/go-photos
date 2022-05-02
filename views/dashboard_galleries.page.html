@@ -1,0 +1,105 @@
+{{ template "header" . }}
+
+<div class="dashboard py-2">
+
+	<div class="flex flex-row justify-between">
+		<h4>Galleries</h4>
+		<a href="/dashboard/galleries/new">
+			<button class="primary">Add New</button>
+		</a>
+	</div>
+
+	<div>
+		<table class="w-full">
+			<colgroup>
+				<col span="1">
+	       <col span="1">
+	       <col span="1">
+	       <col span="1" style="width: 15%;">
+    	</colgroup>
+
+ 			<thead>
+ 				<tr>
+ 					<th>ID</th>
+ 					<th>Name</th>
+ 					<th>Slug</th>
+ 					<th>Actions</th>
+ 				</tr>
+ 			</thead>
+ 			<tbody>
+ 				<tr>
+ 					<td>1</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>2</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>3</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>4</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>5</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>6</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>7</td>
+ 					<td>Random gallery name</td>
+ 					<td>random-gallery-name</td>
+ 					<td>
+ 						<button>Edit</button>
+ 						<button>Delete</button>
+ 					</td>
+ 				</tr>
+ 			</tbody>
+		</table>
+	</div>
+
+	<div class="pagination flex my-2">
+		<div>
+			<button data-prev class="fg-accent">Previous</button>
+			<button data-next class="fg-accent">Next</button>
+		</div>
+	</div>
+</div>
+
+{{ template "footer" . }}

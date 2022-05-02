@@ -1,0 +1,26 @@
+{{ template "header" . }}
+
+<div class="login py-2 mx-auto">
+
+	<div class="my-auto login_inner">
+		<h4>Login</h4>
+
+		<form>
+			<fieldset class="my-1">
+				<label for="username">Username</label>
+				<input type="text" name="username" />
+			</fieldset>
+
+			<fieldset class="my-1">
+				<label for="password">Password</label>
+				<input type="password" />
+			</fieldset>
+
+			<fieldset class="submit">
+				<input type="submit" value="Login" />
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+{{ template "footer" . }}

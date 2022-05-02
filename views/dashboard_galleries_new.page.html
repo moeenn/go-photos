@@ -1,0 +1,51 @@
+{{ template "header" . }}
+
+<script type="text/javascript" src="/static/js/gallery_new.js"></script>
+
+<div class="gallery_new py-2">
+	<div class="flex flex-row justify-between">
+		<h4>New Gallery</h4>
+		<div>
+			<button data-save class="primary">Save</button>
+		</div>
+	</div>
+
+	<div>
+		<div class="flex flex-row gap-1">
+			<fieldset class="my-1 w-full">
+				<label for="name">Name</label>
+				<input type="text" name="name" />
+			</fieldset>
+
+			<fieldset class="my-1 w-full">
+				<label for="slug">Slug</label>
+				<input type="text" name="slug" />
+			</fieldset>
+		</div>
+
+		<fieldset class="hidden">
+			<input type="file" name="images" multiple accept="image/*" />
+		</fieldset>
+	</div>
+
+	<div class="upload_previews">
+		<label for="preview">Images</label>
+		<div class="upload_previews__inner">
+			<div class="new">
+				<svg xmlns="http://www.w3.org/2000/svg" class="m-auto" viewBox="0 0 20 20">
+				  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+				</svg>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<template id="img_preview">
+	<div class="preview">
+		<img src="" alt="preview" />
+		<span class="remove"></span>
+	</div>
+</template>
+
+{{ template "footer" . }}

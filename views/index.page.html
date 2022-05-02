@@ -1,0 +1,42 @@
+{{ template "header" . }}
+{{ template "navbar" . }}
+
+<div class="gallery">
+	<a href="/gallery" target="_blank">
+		<img src="/static/img/01_thumb.jpg" alt="thumb" />
+  	<span>Sample Name</span>
+	</a>
+
+	<a href="/gallery" target="_blank">
+		<img src="/static/img/02_thumb.jpg" alt="thumb" />
+		<span>Sample Name</span>
+	</a>
+		<a href="/gallery" target="_blank">
+		<img src="/static/img/03_thumb.jpg" alt="thumb" />
+		<span>Sample Name</span>
+	</a>
+	<a href="/gallery" target="_blank">
+		<img src="/static/img/01_thumb.jpg" alt="thumb" />
+  	<span>Sample Name</span>
+	</a>
+
+	<a href="/gallery" target="_blank">
+		<img src="/static/img/02_thumb.jpg" alt="thumb" />
+		<span>Sample Name</span>
+	</a>
+		<a href="/gallery" target="_blank">
+		<img src="/static/img/03_thumb.jpg" alt="thumb" />
+		<span>Sample Name</span>
+	</a>
+</div>
+
+<div class="pagination flex justify-between my-2">
+	<div>
+		<button data-prev class="fg-accent">Previous</button>
+		<button data-next class="fg-accent">Next</button>
+	</div>
+
+	<a href="/login" class="my-auto">Login</a>
+</div>
+
+{{ template "footer" . }}
